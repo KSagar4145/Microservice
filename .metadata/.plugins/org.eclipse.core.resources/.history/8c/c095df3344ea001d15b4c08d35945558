@@ -1,0 +1,5 @@
+package com.lced.hotel.hotelservice.exceptionHandler;
+
+public class ResourceNotFoundException {
+
+}

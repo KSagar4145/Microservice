@@ -1,0 +1,5 @@
+package com.lced.user.service.externalservices;
+
+public interface HotelService {
+
+}

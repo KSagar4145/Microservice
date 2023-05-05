@@ -1,0 +1,27 @@
+package com.lced.rating.ratingservice.service;
+
+import java.util.List;
+
+import com.lced.rating.ratingservice.entity.Rating;
+
+public class ServiceRatingImpl implements IRatingService {
+
+	@Override
+	public Rating createRaing(String rating) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Rating> getRatingByUserId(String userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Rating> getRatingByHotelId(String hotelId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.lced.hotel.hotelservice.service;
+
+public class HotelServiceImpl {
+
+}

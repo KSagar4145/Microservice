@@ -1,0 +1,32 @@
+package com.lced.rating.ratingservice.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.lced.rating.ratingservice.entity.Rating;
+import com.lced.rating.ratingservice.repository.IRatingRepository;
+
+public class ServiceRatingImpl implements IRatingService {
+
+	@Autowired
+	private IRatingRepository ratingRepository; 
+	
+	@Override
+	public Rating createRaing(String rating) {
+		return ratingRepository.save(raing)
+	}
+
+	@Override
+	public List<Rating> getRatingByUserId(String userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Rating> getRatingByHotelId(String hotelId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

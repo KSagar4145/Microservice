@@ -1,0 +1,14 @@
+package com.lced.rating.ratingservice.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.lced.rating.ratingservice.entity.Rating;
+
+public interface IRatingRepository extends JpaRepository<Rating, String> {
+
+	//custom findermethod
+	List<Rating> findByUserId(String userId);
+	List<Rating> findByHotelId(String hotelId);
+}

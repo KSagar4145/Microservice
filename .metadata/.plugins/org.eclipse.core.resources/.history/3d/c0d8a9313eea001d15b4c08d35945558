@@ -1,0 +1,21 @@
+server:
+  port: 8082
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservices?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    user: postgres
+    password: root
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          
+          
+          
+       

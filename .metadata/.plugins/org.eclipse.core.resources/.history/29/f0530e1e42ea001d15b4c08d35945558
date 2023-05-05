@@ -1,0 +1,9 @@
+package com.lced.hotel.hotelservice.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.lced.hotel.hotelservice.entity.Hotel;
+
+public interface IHotelRepository extends JpaRepository<Hotel, String>{
+
+}

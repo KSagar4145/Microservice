@@ -1,0 +1,12 @@
+package com.lced.user.service.exceptiondefined;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
+
+	
+	public ResponseEntity<ApiResponse> handlerResourceNotFoundException(){
+		
+	}
+}

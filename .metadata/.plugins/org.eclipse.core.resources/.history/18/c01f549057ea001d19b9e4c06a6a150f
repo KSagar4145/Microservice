@@ -1,0 +1,23 @@
+server:
+  port: 8083
+  
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe/microservices?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    properties:
+        hibernate:
+          dialect: org.hibernate.dialect.Oracle11gDialect
+
+          
+          
+          
+       

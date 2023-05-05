@@ -1,0 +1,27 @@
+package com.lced.hotel.hotelservice.service;
+
+import java.util.List;
+
+import com.lced.hotel.hotelservice.entity.Hotel;
+
+public class HotelServiceImpl implements IHotelService {
+
+	@Override
+	public Hotel createHotel(Hotel hotel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Hotel> getAllHotels() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Hotel getHotelById(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

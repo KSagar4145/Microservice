@@ -1,0 +1,44 @@
+package com.lced.user.service.entities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+import javax.validation.constraints.Email;
+
+import org.springframework.http.ResponseEntity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@ToString
+@Table(name = "micro_user")
+public class User {
+	@Id
+	@Column(name = "ID")
+	private String userId;
+
+	@Column(name = "NAME", length = 30)
+	private String name;
+
+	@Column(name = "EMAIL", length = 30)
+	@Email
+	private String email;
+
+	@Column(name = "ABOUT", length = 30)
+	private String about;
+
+	@Transient
+	private List<Rating> ratings=new ArrayList<>();
+
+}

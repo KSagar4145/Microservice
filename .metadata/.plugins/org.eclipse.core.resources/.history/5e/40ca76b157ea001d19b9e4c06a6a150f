@@ -1,0 +1,13 @@
+
+server.port=8082
+#DB properties
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe/microservices?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+spring.datasource.username=root
+spring.datasource.password=root
+# JPA properties
+spring.jpa.show-sql = true
+spring.jpa.hibernate.ddl-auto = update
+
+#Disable open session in view 
+spring.jpa.open-in-view=false
+

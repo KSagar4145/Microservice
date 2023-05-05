@@ -1,0 +1,5 @@
+package com.lced.rating.ratingservice;
+
+public class RatingController {
+
+}

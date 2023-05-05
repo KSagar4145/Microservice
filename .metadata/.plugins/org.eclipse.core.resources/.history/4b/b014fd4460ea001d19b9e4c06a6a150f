@@ -1,0 +1,35 @@
+package com.lced.rating.ratingservice.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.lced.rating.ratingservice.entity.Rating;
+import com.lced.rating.ratingservice.repository.IRatingRepository;
+
+public class ServiceRatingImpl implements IRatingService {
+
+	@Autowired
+	private IRatingRepository ratingRepository;
+
+	@Override
+	public Rating createRaing(Rating rating) {
+		return ratingRepository.save(rating);
+	}
+
+	@Override
+	public List<Rating> getAllRatings(String userId) {
+		return ratingRepository.findAll();
+	}
+
+	@Override
+	public List<Rating> getRatingByUserId(String userId) {
+		return ratingRepository.findByUserId(userId);
+	}
+
+	@Override
+	public List<Rating> getRatingByHotelId(String hotelId) {
+		return ratingRepository.findByHotelId(String hotelId);
+	}
+
+}

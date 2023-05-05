@@ -1,0 +1,18 @@
+package com.lced.rating.ratingservice.entity;
+package com.lced.rating.ratingservice;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name="rating")
+public class Rating {
+
+	
+}

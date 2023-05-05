@@ -1,0 +1,5 @@
+package com.lced.rating.ratingservice.service;
+
+public interface IRatingService {
+
+}

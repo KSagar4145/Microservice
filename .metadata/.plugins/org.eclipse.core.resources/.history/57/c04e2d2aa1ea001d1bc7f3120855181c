@@ -1,0 +1,11 @@
+# Eureka client configuration
+eureka.client.serviceUrl.defaultZone=http://eureka-server:8761/eureka/
+eureka.client.registerWithEureka=true
+eureka.client.fetchRegistry=true
+
+# Eureka instance configuration
+eureka.instance.preferIpAddress=true
+#eureka.instance.instanceId=${spring.cloud.client.hostname}:${spring.application.instance_id:${server.port}}
+#eureka.instance.hostname=${spring.cloud.client.hostname}
+#eureka.instance.port=${server.port}
+#eureka.instance.appname=my-microservice

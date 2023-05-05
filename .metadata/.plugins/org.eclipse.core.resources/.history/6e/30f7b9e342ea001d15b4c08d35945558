@@ -1,0 +1,5 @@
+package com.lced.hotel.hotelservice.controller;
+
+public class HotelController {
+
+}
