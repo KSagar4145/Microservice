@@ -1,8 +1,0 @@
-package com.lced.user.service.service;
-
-import com.lced.user.service.entities.User;
-
-public class UserService implements IUserService {
-	
-
-}

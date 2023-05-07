@@ -13,6 +13,7 @@ import javax.validation.constraints.Email;
 import org.springframework.http.ResponseEntity;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
@@ -23,6 +24,7 @@ import lombok.ToString;
 @Entity
 @ToString
 @Table(name = "micro_user")
+@Builder
 public class User {
 	@Id
 	@Column(name = "ID")

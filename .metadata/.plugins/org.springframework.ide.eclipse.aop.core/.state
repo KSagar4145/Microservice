@@ -3,5 +3,7 @@
 <aop-project name="UserService"/>
 <aop-project name="RatingService"/>
 <aop-project name="HotelService"/>
+<aop-project name="ApiGateway"/>
 <aop-project name="ServiceRegistry"/>
+<aop-project name="ConfigServer"/>
 </aop-reference-model>
